@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navigation {
+    width: 100%;
+    padding: 20px 0 10px 0;
+}
+
+.navigation .box-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation .box-navigation .box:nth-child(1) h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+    color: yellowgreen;
+}
+
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+
+/* Welcome Style */
+header .hero {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+}
+
+header .hero h1 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 54px;
+    text-align: center;
+}
+
+/* Description Style */
+.desc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.desc .box-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc .box-desc .box:nth-child(1) {
+    padding-right: 20px;
+}
+
+.desc .box-desc .box:nth-child(1) h1 {
+    font-size: 42px;
+}
+
+.desc .box-desc .box:nth-child(1) p {
+    line-height: 2;
+}
+
+.desc .box-desc .box:nth-child(2) img {
+    border-radius: 10px;
+    -webkit-border-ra: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+@media screen and (max-width : 1200px) {
+    .desc .box-desc .box:nth-child(2) img {
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width : 990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #fff;
+        width: 200px;
+        border-radius: 10px;
+        -webkit-border-: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active {
+        opacity: 1;
+        top: 100px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size: 40px;
+    }
+
+    header .hero h1 {
+        font-size: 34px;
+    }
+
+    .desc .box-desc {
+        flex-direction: column-reverse;
+    }
+
+    .desc .box-desc .box:nth-child(1) {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .desc .box-desc .box:nth-child(2) img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    header .hero h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width : 575px) {
+    .desc .box-desc .box:nth-child(1) h1 {
+        font-size: 34px;
+    }
+
+    .desc .box-desc .box:nth-child(1)p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 475px) {
+    header .hero h1 {
+        font-size: 20px;
+    }
+}
