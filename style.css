@@ -205,12 +205,28 @@ header .hero h1 {
     }
 
     .desc .box-desc .box:nth-child(1)p {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .desc .box-desc .box:nth-child(2) img {
+        width: 300px;
     }
 }
 
 @media screen and (max-width : 475px) {
     header .hero h1 {
         font-size: 20px;
+    }
+
+    .desc .box-desc .box:nth-child(1) h1 {
+        font-size: 28px;
+    }
+
+    .desc .box-desc .box:nth-child(1)p {
+        font-size: 12px;
+    }
+
+    .desc .box-desc .box:nth-child(2) img {
+        width: 250px;
     }
 }
