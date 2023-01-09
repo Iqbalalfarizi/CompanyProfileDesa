@@ -106,6 +106,7 @@ header .hero h1 {
 
 .desc .box-desc .box:nth-child(1) h1 {
     font-size: 42px;
+
 }
 
 .desc .box-desc .box:nth-child(1) p {
@@ -120,6 +121,28 @@ header .hero h1 {
     -o-border-radius: 10px;
     width: 600px;
     height: 300px;
+}
+
+/* Galeri Style */
+
+.galeri {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.galeri .box-galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeri .box-galeri img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
 }
 
 @media screen and (max-width : 1200px) {
@@ -186,6 +209,7 @@ header .hero h1 {
     .desc .box-desc .box:nth-child(1) {
         text-align: center;
         margin-top: 30px;
+        padding-right: 0;
     }
 
     .desc .box-desc .box:nth-child(2) img {
@@ -196,6 +220,10 @@ header .hero h1 {
 @media screen and (max-width : 768px) {
     header .hero h1 {
         font-size: 28px;
+    }
+
+    .galeri {
+        height: 100%;
     }
 }
 
@@ -228,5 +256,31 @@ header .hero h1 {
 
     .desc .box-desc .box:nth-child(2) img {
         width: 250px;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        right: 30px;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active {
+        right: 30px;
+    }
+
+    .desc .box-desc .box:nth-child(1) h1 {
+        font-size: 24px;
+    }
+
+    .desc .box-desc .box:nth-child(1)p {
+        font-size: 10px;
+    }
+
+    .desc .box-desc .box:nth-child(2) img {
+        width: 200px;
+    }
+
+    .galeri {
+        height: 100%;
     }
 }
