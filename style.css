@@ -14,7 +14,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('./assets/img/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ header {
 .header-sejarah {
     width: 100%;
     height: 80px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('./assets/img/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ header {
 
 .navigation .box-navigation .box:nth-child(2) ul li a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -192,6 +192,34 @@ footer .copyright {
     color: #fff;
 }
 
+/* Style Sejarah Page */
+.sejarah {
+    margin: 10px 40px 0 40px;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.borderline {
+    margin: 10px 40px 10px 40px;
+}
+
+/* Table Kades */
+table {
+    margin: 10px 40px 10px 40px;
+
+}
+
+table tr td {
+    padding-left: 5px;
+}
 
 @media screen and (max-width : 1200px) {
     .desc .box-desc .box:nth-child(2) img {
@@ -330,5 +358,15 @@ footer .copyright {
 
     .galeri {
         height: 100%;
+    }
+
+    .sejarah {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 359px) {
+    .header-sejarah {
+        height: 150px;
     }
 }
