@@ -61,7 +61,7 @@ header {
 
 .navigation .box-navigation .box:nth-child(2) ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -149,10 +149,16 @@ header .hero h1 {
     align-items: center;
 }
 
-.galeri .box-galeri img {
+.galeri .box-galeri .box:nth-child(1) img {
     width: 300px;
     height: 200px;
-    margin: 10px;
+
+}
+
+.galeri .box-galeri .box:nth-child(1) h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Footer Style */
@@ -332,6 +338,12 @@ table tr td {
 
     .desc .box-desc .box:nth-child(2) img {
         width: 250px;
+
+    }
+
+    .galeri .box-galeri .box:nth-child(1) h1 {
+        font-size: 28px;
+        text-align: center;
     }
 }
 
@@ -358,6 +370,11 @@ table tr td {
 
     .galeri {
         height: 100%;
+    }
+
+    .galeri .box-galeri .box:nth-child(1) h1 {
+        font-size: 24px;
+        text-align: center;
     }
 
     .sejarah {
