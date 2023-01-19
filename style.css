@@ -134,31 +134,61 @@ header .hero h1 {
 }
 
 /* Galeri Style */
-
-.galeri {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.galeri .box-galeri {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.galeri .box-galeri .box:nth-child(1) img {
-    width: 300px;
-    height: 200px;
-
-}
-
-.galeri .box-galeri .box:nth-child(1) h1 {
-    font-size: 42px;
+.title {
+    padding: 40px;
     text-align: center;
-    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.container-galery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.photo-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.25s;
+}
+
+image:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 600px) {
+    .container-galery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container-galery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .photo-column {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-galery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-column {
+        margin: 0 20px 0 20px;
+    }
 }
 
 /* Footer Style */
@@ -304,9 +334,7 @@ table tr td {
         font-size: 28px;
     }
 
-    .galeri {
-        height: 100%;
-    }
+
 }
 
 @media screen and (max-width : 575px) {
@@ -341,10 +369,6 @@ table tr td {
 
     }
 
-    .galeri .box-galeri .box:nth-child(1) h1 {
-        font-size: 28px;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width : 375px) {
@@ -368,14 +392,7 @@ table tr td {
         width: 200px;
     }
 
-    .galeri {
-        height: 100%;
-    }
 
-    .galeri .box-galeri .box:nth-child(1) h1 {
-        font-size: 24px;
-        text-align: center;
-    }
 
     .sejarah {
         justify-content: center;
