@@ -267,6 +267,17 @@ table tr td {
     padding-left: 5px;
 }
 
+/* Struktur Organisasi Style */
+.card-image {
+    width: 150px;
+    height: 150px;
+}
+
+.card-image img {
+    width: 100%;
+
+}
+
 @media screen and (max-width : 1200px) {
     .desc .box-desc .box:nth-child(2) img {
         width: 500px;
