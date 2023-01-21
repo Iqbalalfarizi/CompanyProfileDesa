@@ -178,7 +178,7 @@ image:hover {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     .container-galery {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -268,14 +268,73 @@ table tr td {
 }
 
 /* Struktur Organisasi Style */
+.structure-person {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 250px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-image {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+        0 5px 20px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .card-image img {
     width: 100%;
+    transform: scale(1.2);
+}
 
+.card p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .structure-person {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    .structure-person {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width : 1200px) {
